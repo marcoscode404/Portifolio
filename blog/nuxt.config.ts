@@ -5,5 +5,9 @@ export default defineNuxtConfig({
   srcDir: "src/",
   ssr: false,
 
+  colorMode: {
+    preference: 'dark'
+  },
+
   devtools: { enabled: true },
 })
