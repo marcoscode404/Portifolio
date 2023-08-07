@@ -4,11 +4,14 @@
 
 
 <template>
-  <header class="fixed w-full bg-gradient-to-r from-green-600 from-10%  via-green-400 via-50% to-green-500 to-90% 
+  <header class="fixed w-full bg-[#000000ad]  shadow-lg drop-shadow-lg
   h-10 z-[9999999999999] font-semibold px-2  flex items-center justify-between">
+  程序員 Portifolio
+
+  <div>Menu</div>
   </header>
   <slot>
-    <div class="borda-animada w-full bg-red-900 mt-96">asdasd</div>
+    <div class="borda-animada w-full bg-red-900 mt-96"></div>
   </slot>
 </template>
 

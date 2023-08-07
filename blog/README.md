@@ -42,6 +42,9 @@ Encapsular e reutilizar a lógica de estado
 # Como pegar o status error da api
 <!-- ${error.response.data.detail.error_description} -->
 
+<!-- color mode  -->
+<!-- '@nuxtjs/color-mode' -->
+
 # google fonts
 yarn add --dev @nuxtjs/google-fonts
 <!-- https://google-fonts.nuxtjs.org/setup -->
