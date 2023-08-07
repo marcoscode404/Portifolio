@@ -25,6 +25,11 @@ function theme() {
           Olá, Eu Sou
           <h1 class="font-bold text-lg">Marcos Vini</h1>
           <span class="">Desenvolvedor Front-end & UI Designer.</span>
+
+          <div class="flex gap-10">
+            <UButton icon="grommet-icons:github" size="sm" color="primary" variant="solid" label="Button" :trailing="false" />
+            <UButton icon="grommet-icons:linkedin-option" size="sm" color="primary" variant="solid" label="Button" :trailing="false" />
+          </div>
         </div>
       </div>
 
