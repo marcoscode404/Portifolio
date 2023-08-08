@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: false,
 
   colorMode: {
-    preference: 'dark'
+    preference: 'light'
   },
 
   devtools: { enabled: true },

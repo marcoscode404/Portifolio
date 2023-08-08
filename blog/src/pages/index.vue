@@ -1,10 +1,6 @@
 <script setup>
 const isOpen = ref(false)
 
-function theme() {
-  localStorage.setItem("nuxt-color-mode", 'light');
-}
-
 </script>
 <template>
   <main class="overflow-x-hidden">
@@ -23,14 +19,22 @@ function theme() {
           <img src="../assets/perfil.jpeg" alt="">
         </div>
 
-        <div>
-          Olá, Eu Sou
-          <h1 class="font-bold text-lg">Marcos Vini</h1>
-          <span class="">Desenvolvedor Front-end & UI Designer.</span>
+        <div class="box-texto mt-2">
+          <span class="font-bold">Olá, Eu Sou</span>
+          <h1 class="title font-bold h-16 flex items-center justify-center text-lg">Marcos Vini</h1>
+          <span class="descricao">Desenvolvedor Front-end & UI Designer.</span>
 
-          <div class="flex gap-4">
-            <UButton icon="grommet-icons:github" size="sm" label="GitHub" :trailing="true" />
-            <UButton icon="grommet-icons:linkedin-option" size="sm" label="LinkDin" :trailing="true" />
+          <!-- buttons Links -->
+          <div class="flex mt-5 justify-center gap-4">
+            <UButton size="sm" color="purple" :trailing="true">
+              GitHub
+              <Icon name="grommet-icons:github" />
+            </UButton>
+
+            <UButton size="sm" :trailing="true">
+              LinkDin
+              <Icon name="grommet-icons:linkedin-option"/>
+            </UButton>
             <UButton label="Contato" @click="isOpen = true" />
           </div>
         </div>
@@ -39,7 +43,13 @@ function theme() {
 
     </div>
 
-    <div class="h-52">
+    <!-- sobre mim -->
+    <div class="h-[555px]">
+      <h2>Sobre mim</h2>
+    </div>
+
+    <div class="h-[555px]">
+      <h2>Experiência</h2>
     </div>
 
   </main>
@@ -53,5 +63,62 @@ function theme() {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+
+.box-texto{
+
+text-align:center;
+position: absolute;
+top:0;
+left:0;
+transform: translate(-50%, -50%);
+width: 100%;
+display: contents;
+background: red;
+
+}
+
+.cabecalho { width:100%; float:left; }
+
+.box-texto span{ display:block; }
+
+.title{
+
+font-size: 70px;
+font-weight: 700;
+color: #22cad0;
+font-family: 'open_sansregular';
+letter-spacing: 5px;
+margin-bottom: 20px;
+background:#ffffff57;
+position: relative;
+animation: motion 3s 1;
+}
+
+.descricao{
+
+font-size:1.5em;
+color: #868686;
+font-family: 'open_sansregular';
+letter-spacing: 26px;
+transition:6s;
+
+}
+
+@keyframes motion{
+0%{
+    color: #000000;
+    margin-bottom: -42px;
+}
+30%{
+    letter-spacing: 30px;
+    margin-bottom: -42px;
+    }
+85%{
+    letter-spacing: 5px;
+    margin-bottom: -42px;
+}
 }
 </style>
